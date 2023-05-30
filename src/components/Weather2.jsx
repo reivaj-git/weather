@@ -10,15 +10,16 @@ const Weather2 = ({ weather2, temp }) => {
   return (
     <section className='text-xl' >
       <h2 className='text-center text-white mb-4 font-bold text-2xl tracking-wider'> {weather2.name}, {weather2.sys.country}</h2>
-      
-      <section className='grid gap-4 sm:grid-cols-2' >
+
+      <section className='flex flex-col gap-4 sm:flex-row' >
+
 
         <article className=' bg-white/50 hover:bg-white/70 rounded-3xl grid grid-cols-2 justify-items-center justify-center items-center text-center py-2 ' >
 
           <h3 className='capitalize col-start-1 col-end-3'>{weather2.weather[0].description}</h3>
 
 
-          <h2 className='text-[45px] font-light' >{isCelsius ? `${temp.celsius} °C ` : `${temp.farengeing} °F`}</h2>
+          <h2 className= 'text-[35px] md:text-[45px] font-light' >{isCelsius ? `${temp.celsius} °C ` : `${temp.farengeing} °F`}</h2>
 
 
           <div >
@@ -27,7 +28,7 @@ const Weather2 = ({ weather2, temp }) => {
         </article>
 
 
-        <article className='bg-white/50 hover:bg-white/70 rounded-3xl grid grid-cols-3 justify-center items-center p-2 sm:grid-cols-1'>
+      <article className='bg-white/50 hover:bg-white/70 rounded-3xl grid grid-cols-3 justify-center items-center p-2 sm:grid-cols-1 sm:w-28'>
 
           <div className='flex text-sm justify-center items-center'>
             <div>

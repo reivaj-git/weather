@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import './App.css'
 import './index.css';
 import Weather2 from './components/Weather2'
 import Loader from './components/Loader'
